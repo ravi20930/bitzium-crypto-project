@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/************************** header css starts ************************************/
+.headerItems {
+    font-size: 15px;
+	font-weight: 500;
+    font-family: 'Montserrat';
+    color: #003380ff;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    padding-inline: 3%;
+    height: 50px;
+    background-color: white;
+    z-index: 1;
+}
+/************************** header css ends *************************************/
+
+
+
+/************************ main body area *************************************/
+.containerMain {
+	margin-left: 18vw;
+}
+
+.cardView{
+	margin: 10px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+	padding: 20px;
+	border-radius: 5px;
+}
+.cardViewWithoutShadow{
+	margin: 10px;
+	padding: 20px;
+}
+
+
+.cardView:hover{
+	box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+#heading {
+	color: #003380ff;
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+#bodyText {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 15px;
+}
+
+#mfooter {
+	position: absolute;
+	left: 0;
+	padding: 20px;
+	height: 80px;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background-color: #5599ffff;
+	color: white;
+  }
+
+#footerItems {
+	display: flex;
+	flex-direction: column;
+	margin-left: 18vw;
+  }
+
+/************************ all coins card layout ******************************/
+.coinsCardContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	text-decoration: none;
+}
+/************************ all coins card layout ends ***************************/
+
+
+
+/****************** label inside card view with two columns********************/
+.coin-label{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 15px;
+	font-weight: 400;
+	text-decoration: none;
+	color: black;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-family: Montserrat;
+	align-items: center;
+}
+
+/************************* button css starts ***********************************/
+.buttonStyle {
+	padding: 5px;
+	font-size: 12px;
+	color: white;
+	border-style: hidden;
+	background-color: #5599ffff;
+	max-width: 100%;
+	min-width: 70px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-inline: 5px;
+	border-radius: 10px;
+}
+
+.buttonStyle:hover {
+	background-color: #003380ff;
+	transition: all 1s ease;
+}
+/*************************** button css ends ************************************/
+
+
+
+/************ main body which contains item-end and item-centre *****************/
+.content{
+	display: flex;
+	color:  black;
+	top: 10vh;
+	position: absolute;
+	width: 100%;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.content-item-end
+{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+
+.content-item-centre
+{
+	display: flex;
+	flex-direction: column;
+	width: 51.6%;
+}
+
+.cardViewFGIChart {
+	width: 79vw;
+	margin: 10px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.allCoinsLayout {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 81vw;
+}
+
+@media only screen and (max-width: 1100px) {
+	.content{
+		display: flex;
+		flex-direction: column;
+	}
+	.content-item-centre{
+		width: 100%;
+	}
+	.content-item-end{
+		width: 100%;
+	}
+
+	.headerItems {
+		font-size: 0px;
+		justify-content: center;
+	}
+
+	.cardView {
+		margin: 0px;
+		margin-bottom: 20px;
+		border-radius: 0px;
+		padding: 5px;
+	}
+
+	.coin-label {
+		font-size: 13px;
+	}
+
+	#heading {
+		margin: 0px;
+	}
+	.content {
+		top: 13vh;
+	}
+
+	.containerMain {
+		margin-left: 0px;
+	}
+
+	.cardViewFGIChart {
+		width: 100%;
+		margin: 0px;
+		margin-bottom: 20px;
+		border-radius: 0px;
+		padding: 5px;
+	}
+	.cardViewWithoutShadow {
+		margin: 0px;
+		margin-bottom: 20px;
+		padding: 5px;
+	}
+
+	#footerItems {
+		margin-left: 0;
+	}
+
+	.allCoinsLayout {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100vw;
+	}
+}
